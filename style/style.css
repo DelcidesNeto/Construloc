@@ -11,9 +11,12 @@ nav{
     width: 100vw;
     padding: 10px;
 }
-nav>txt{
+.topo{
     margin-right: 20vw;
     font: bolder 4vw 'Times New Roman', Times, serif;
+}
+sep{
+    font-size: 2vw;
 }
 a{
     font-size: 2vw;
