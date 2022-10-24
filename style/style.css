@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: #0000ff77;
+    width: 100vw;
+    padding: 10px;
+}
+nav>txt{
+    margin-right: 20vw;
+    font: bolder 4vw 'Times New Roman', Times, serif;
+}
+a{
+    font-size: 2vw;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
