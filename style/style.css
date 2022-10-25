@@ -25,27 +25,26 @@ a{
 #img1{
     margin-top: 10%;
     width: 100%;
-    height: 30vw;
+    height: 50vw;
     background: gray url('../imagens/betoneira.jpeg') top center no-repeat fixed;
-    background-size: 100vw;
+    background-size: cover;
     transition: 1s;
 }
 #img2{
     margin-top: 10%;
     width: 100%;
-    height: 30vw;
+    height: 50vw;
     background: gray url('../imagens/andaime.jpg') top center no-repeat fixed;
-    background-size: 100vw;
+    background-size: cover;
     transition: 1s;
 }
 .locacao{
     display: inline-block;
-    padding-top: 14%;
+    margin-top: 22%;
     margin-left: 47%;
-    color: red;
 }
 .botao{
-    cursor: pointer;
+    cursor: help;
     border: none;
     font-size: 1.5vw;
     padding: 5px;
