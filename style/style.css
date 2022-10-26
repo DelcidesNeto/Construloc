@@ -3,26 +3,75 @@
     50%{transform: scale(1.3);}
     100%{transform: scale(1.7);}
 }
+@keyframes animacao_betoneira {
+    0%{background-image: linear-gradient(to right, #252627, #ff0022, #252627);}
+    25%{background-image: linear-gradient(to right, #252627, #ff0022);}
+    50%{background-image: linear-gradient(to left, #252627, #ff0022, #252627);}
+    75%{background-image: linear-gradient(to left, #252627, #ff0022);}
+}
+@keyframes animacao_andaime {
+    0%{background-image: linear-gradient(to right, #0A2239, #FFF9FB, #0A2239);}
+    25%{background-image: linear-gradient(to right, #0A2239, #FFF9FB);}
+    50%{background-image: linear-gradient(to left, #0A2239, #FFF9FB, #0A2239);}
+    75%{background-image: linear-gradient(to left, #0A2239, #FFF9FB);}
+}
+@font-face {
+    font-family: font_titulo;
+    src: url('../fonts/Anson-Regular.otf');
+}
+@font-face {
+    font-family: font_logo;
+    src: url(../fonts/Monoton-Regular.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background-color: #A9BCD0;
+    background-color: #2F3061;
     height: 100%;
 }
 nav{
-    background-color: #DE1A1A;
+    background-image: linear-gradient(to bottom, #556F7A, #2E6171);
     padding: 10px;
+    box-shadow: 0px 2px 20px 1px #000000da;
+}
+.betoneira{
+    margin: 0px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    font: bold 4vw font_titulo, Courier, monospace;
+    font-variant: small-caps;
+    animation: animacao_betoneira 2s linear infinite;
+    background-image: linear-gradient(to right, #252627, #ff0022, #252627);
+}
+.andaime{
+    margin: 0px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    font: bold 4vw font_titulo, Courier, monospace;
+    font-variant: small-caps;
+    animation: animacao_andaime 2s linear infinite;
+    background-image: linear-gradient(to right, #0A2239, #FFF9FB, #0A2239);
+}
+.texto{
+    text-align: justify;
+    font-size: 2vw;
+    line-height: 2em;
+    margin-bottom: 5%;
 }
 .topo{
-    margin-right: 20vw;
-    font: bolder 4vw 'Times New Roman', Times, serif;
+    margin-right: 7vw;
+    font: normal 3vw font_logo, Times, serif;
 }
 sep{
     font-size: 2vw;
 }
-a{
+nav>a{
     font-size: 2vw;
     padding: 10px;
     text-decoration: none;
@@ -30,7 +79,7 @@ a{
 }
 .fundo{
     margin: 10% 5% 0px 5%;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     border: 1px solid #0000009a;
     box-shadow: 0px 0px 10px 0px #000000a8;
     background-color: #9899A6;
@@ -43,14 +92,20 @@ a{
     background: gray url('../imagens/betoneira.jpeg') top center no-repeat fixed;
     background-size: cover;
     transition: 1s;
+    box-shadow: inset 0px -100px 90px 0px #0000005d;
+}
+.fundo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 #img2{
-    margin-top: 10%;
     width: 100%;
     height: 30vw;
     background: gray url('../imagens/andaime.jpg') top center no-repeat fixed;
     background-size: cover;
     transition: 1s;
+    box-shadow: inset 0px -100px 90px 0px #0000005d;
 }
 .locacao{
     display: inline-block;
