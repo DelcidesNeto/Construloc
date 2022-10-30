@@ -14,3 +14,6 @@
     transition: 1s;
     box-shadow: inset 0px -100px 90px 0px #0000005d;
 }
+.rotacao{
+    display: none;
+}
