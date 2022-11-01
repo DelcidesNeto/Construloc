@@ -1,3 +1,19 @@
+function mudar_tamanho(){
+    var opcoes = window.document.querySelector('#opcoes')
+    opcoes.style.display = 'none'
+}
+
+
+function mostrar_menu(){
+    var opcoes = window.document.querySelector('#opcoes')
+    if (opcoes.style.display == 'block'){
+        opcoes.style.display = 'none'
+    }else{
+        opcoes.style.display = 'block'
+    }
+}
+
+
 function mostrar_botao(n){
     var botao = window.document.querySelector(`#botao${n}`)
     botao.style.display = 'block'
