@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style/style.css" media="all">
     <link rel="stylesheet" href="style/style_landscape.css" media="screen and (orientation: landscape)">
     <link rel="stylesheet" href="style/style_portrait.css" media="screen and (orientation: portrait)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudar_tamanho()">
     <main>
         <code>
             <nav>   
-                <p class="topo">Construloc</p>
-                <rotacao class="rotacao">
+                <h1 class="topo">Construloc</h1>
+                <rotacao class="rotacao"> <!--Só aparece no Celular-->
                     <img class="telefone" src="imagens/rotacao.png" alt="">
                 </rotacao>
                 <a href="">Endereço</a>
@@ -22,6 +23,14 @@
                 <a href="">Contato</a>
                 <sep>|</sep>
                 <a href="">Sobre Nós</a>
+                <div id="menu_celular"> <!--Só aparece no Celular-->
+                    <i id="menu" class="material-icons" style="font-size: 1.3em;" onclick="mostrar_menu()">menu</i>
+                    <div id="opcoes">
+                        <a href="">Endereço</a>
+                        <a href="">Contato</a>
+                        <a href="">Sobre Nós</a>
+                    </div>
+                </div>
             </nav>
             <section class="fundo">
                 <h1 class="betoneira">Alugue a sua Betoneira</h1>
