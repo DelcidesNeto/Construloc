@@ -1,6 +1,8 @@
 function mudar_tamanho(){
-    var opcoes = window.document.querySelector('#opcoes')
-    opcoes.style.display = 'none'
+    if(innerWidth >= 607){
+        var opcoes = window.document.querySelector('#opcoes')
+        opcoes.style.display = 'none'
+    }
 }
 
 
