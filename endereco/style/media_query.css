@@ -1,16 +1,22 @@
 @media screen and (orientation: portrait) {
     .mapa{
-        margin: 20px auto 20px auto;
-        max-width: 600px;
-        min-width: 300px;
-        height: 50vw;
+        width: 50%;
+        height: 30vw;
+        float: left;
+    }
+    .endereco>h1, .endereco>address{
+        float: right;
+        width: 50%;
     }
 }
 @media screen and (orientation: landscape) {
     .mapa{
-        margin: 20px auto 20px auto;
-        max-width: 700px;
-        min-width: 300px;
+        width: 50%;
         height: 30vw;
+        float: left;
+    }
+    .endereco>h1, .endereco>address{
+        float: right;
+        width: 50%;
     }
 }
